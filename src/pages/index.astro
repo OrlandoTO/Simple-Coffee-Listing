@@ -1,0 +1,30 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Products from '../components/Products.jsx'
+---
+
+<Layout title="SIMPLE COFFEE LISTING">
+	<main class="mx-32 md:mx-28 lg:mx-20 bg-[#1B1D1F] rounded-xl p-16 -mt-28 mb-28 z-10 relative flex flex-col items-center justify-center text-center">
+		<header
+			class="flex flex-col items-center justify-center mx-15 md:mx-30 lg:mx-60 relative"
+		>
+			<h1 class="text-[32px] text-[#FEF7EE] font-semibold text-center">
+				Our Collection
+			</h1>
+			<p class="text-center text-[#6F757C] font-medium text-base">
+				Introducing our Coffee Collection, a selection of unique coffees
+				from different roast types and origins, expertly roasted in
+				small batches and shipped fresh weekly.
+			</p>
+			<img
+				src="../../public/img/vector.svg"
+				alt="Vector"
+				class="absolute right-0 -top-12 -z-20"
+			/>
+		</header>
+
+		<Products client:visible/>
+	</main>
+</Layout>
+
+<style></style>
