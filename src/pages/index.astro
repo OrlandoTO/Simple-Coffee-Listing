@@ -1,6 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Products from '../components/Products.jsx'
+import Vector from '../components/Vector.astro';
+
 ---
 
 <Layout title="SIMPLE COFFEE LISTING">
@@ -16,11 +18,8 @@ import Products from '../components/Products.jsx'
 				from different roast types and origins, expertly roasted in
 				small batches and shipped fresh weekly.
 			</p>
-			<img
-				src="../../public/img/vector.svg"
-				alt="Vector"
-				class="absolute right-0 -top-12 -z-20"
-			/>
+			<Vector class='absolute right-0 -top-12 -z-20'/>
+			
 		</header>
 
 		<Products client:visible/>
