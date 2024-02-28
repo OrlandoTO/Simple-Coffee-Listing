@@ -15,14 +15,14 @@ export default function Card({ image, name, price, rating, votes, available, pop
             rating ? (
                 <div className="flex w-full text-sm font-semibold justify-between items-center">
                     <span className="flex items-center gap-1">
-                        <img src="../../public/img/Star_fill.svg" alt="Star fill" /> <span className="text-[#BEE3CC]">{ rating}</span> <span className="text-[#6F757C]">{"  (" + votes + " votes)"}</span>
+                        <img src="./public/img/Star_fill.svg" alt="Star fill" /> <span className="text-[#BEE3CC]">{ rating}</span> <span className="text-[#6F757C]">{"  (" + votes + " votes)"}</span>
                     </span>
                     {
                         available ? '' : (<span className="text-[#ED735D]">Sold out</span>)
                     }
 
                 </div>
-            ) : <div className="flex  w-full gap-2 text-sm items-center text-[#6F757C] font-semibold"><img src="../../public/img/Star.svg" alt="Star fill" />No ratings</div>
+            ) : <div className="flex  w-full gap-2 text-sm items-center text-[#6F757C] font-semibold"><img src="./public/img/Star.svg" alt="Star fill" />No ratings</div>
         }
 
         {
